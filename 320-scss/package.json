@@ -1,0 +1,20 @@
+{
+  "name": "bootstraps",
+  "version": "1.0.0",
+  "scripts": {
+    "goservergo":"lite-server --baseDir=\"public\"",
+    "cssprecompiler":"sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run goservergo\" \"npm run cssprecompiler\""
+  },
+  "author": "Baoting han & Thalia",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.59.3"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "description": ""
+}
