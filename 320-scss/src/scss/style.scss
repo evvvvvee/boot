@@ -14,11 +14,14 @@
 
 
 .chart-container {
-    position: absolute;
+    position: relative;
     width: 686px;
     height: 336px;
 
 }
+
+
+
 //Mobile Version
 @media (max-width: 768px) { 
 .col-sm-2 {
@@ -27,5 +30,21 @@
 
 #sidebarmobile {
     display: block;
+}
+
+.chart-container {
+    position: relative;
+    width: 325px;
+    height: 200px;
+    margin-right: 2px;
+}
+
+.mobile-legend-container {
+    height: 500px;
+    width: 200px;
+}
+
+.mobile_title {
+    font-size: 3vh;
 }
  }

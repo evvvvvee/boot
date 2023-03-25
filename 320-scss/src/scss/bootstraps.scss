@@ -1,15 +1,13 @@
-// Custom.scss
-// Option A: Include all of Bootstrap
+//Google Fonts Below
+//Multifont
+@import url("https://use.typekit.net/ejr0hrj.css");
 
-// Include any default variable overrides here (though functions won't be available)
-//-------overview----------------------------//
-
-
-
+//If any default variables need to be overridden, it needs to be added below.
+$font-family-base: "muli-text", sans-serif;
 
 
 
+//Variables need to be added above! BEFORE @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-// Then add additional custom code here
+// Add additional custom code here below
 
