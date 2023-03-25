@@ -5,231 +5,267 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>bootstraps</title>
+    <title>Baoting & Thalia Bootstrap Assignment</title>
 
+    <!--CSS Reset-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+
+    <!--Bootstrap Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="/public/assets/css/style.css" /> -->
+    <!--Link to Bootstrap CSS-->
     <link rel="stylesheet" href="assets/css/bootstraps.css" /> 
+    <!--Link to Style.CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <!--Javascript Link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
+
 <body> 
+    <!--Container for Mobile & Desktop Nav-->
     <div class="container-fluid">
-        <!--Container for Sidebar Nav-->
+        <!--Page Grid-->
         <div class="row">
-            <!--Navigation burger button-->
+            <!--Mobile Nav-->
             <div class="bg-warning">
                 <nav id="sidebarmobile">
+                    <!--Burger Menu Button-->
                     <a class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                         </svg>
                     </a>
-                    
+                    <!--Burger Menu Close-->
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dashboard Kit</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Dashboard Kit</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
+                        <!--Off Screen Navigation & Items-->
                         <div class="offcanvas-body">
-                        <div>
-                            <ul class="p-0">
-                                <li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
-                                            <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
-                                        </svg>
-                                        <span class="px-2">Overview</span>
-                                    </a>
-                                </li>
-                                <li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
-                                            <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13Z"/>
-                                        </svg> 
-                                        <span class="px-2">Tickets</span>
-                                    </a>
-                                </li>
-                                <li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
-                                        </svg>
-                                        <span class="px-2">Ideas</span>
-                                    </a>
-                                </li>
-                                <li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                                        </svg>
-                                        <span class="px-2">Contacts</span>
-                                    </a>
-                                </li>
-                                <li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
-                                            <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
-                                            <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
-                                        </svg>
-                                        <span class="px-2">Agents</span>
-                                    </a>
-                                </li><li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-                                        </svg>
-                                        <span class="px-2">Articles</span>
-                                    </a>
-                                </li>
-                                <li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable-circle-fill" viewBox="0 0 16 16">
-                                            <path d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z"/>
-                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2a7.031 7.031 0 0 1-2.949-2.951ZM12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z"/>
-                                        </svg>
-                                        <span class="px-2">Setting</span>
-                                    </a>
-                                </li>
-                                <li class="pb-3 pt-3 px-2 hiddenbar">
-                                    <a class="dropdown-item" href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
-                                            <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
-                                            <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
-                                        </svg>
-                                        <span class="px-2">Subscriptions</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                     
+                            <div>
+                                <ul class="p-0">
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--PieChart Icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                                <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
+                                            </svg>
+                                            <span class="px-2">Overview</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--Ticket Icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                                <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13Z"/>
+                                            </svg> 
+                                            <span class="px-2">Tickets</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--Lightbulb Icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+                                            </svg>
+                                            <span class="px-2">Ideas</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--People Icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                            </svg>
+                                            <span class="px-2">Contacts</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--Joystick Icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+                                                <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+                                                <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+                                            </svg>
+                                            <span class="px-2">Agents</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--Book Icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                            </svg>
+                                            <span class="px-2">Articles</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--Wrench/Options icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable-circle-fill" viewBox="0 0 16 16">
+                                                <path d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z"/>
+                                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2a7.031 7.031 0 0 1-2.949-2.951ZM12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z"/>
+                                            </svg>
+                                            <span class="px-2">Setting</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="pb-3 pt-3 px-2 hiddenbar">
+                                        <a class="dropdown-item" href="#">
+                                            <!--Tag Icon-->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                                <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+                                                <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+                                            </svg>
+                                            <span class="px-2">Subscriptions</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
-            <div class="col-sm-2  bg-black">
-                <nav class="flex-column navbar navbar-expand bg-dark">
-                    <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+
+            <!--Container for Desktop Navigation Bar-->
+            <div class="col-sm-2  bg-dark">
+                <!--Desktop Navigation & Items-->
+                <nav class="flex-column navbar navbar-expand">
+                    <!--Logo-->
+                    <a href="" class="d-flex align-items-center my-5 me-md-auto text-decoration-none">
                         <img class="me-2"src="/assets/images/Dashboard_Kit.png" width="32" height="32"/>
-                        <span class="fs-4">Sidebar</span>
+                        <span class="fs-5">Dashboard Kit</span>
                     </a>
 
+                    <!--List of Navigation Links-->
+                    <ul class="navbar-nav d-flex flex-column">
+
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link text-light">
+                                <!--PieChart Icon-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
+                                    <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
+                                </svg>  
+                            Overview
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link text-light">
+                            <!--Ticket Icon-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                    <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13Z"/>
+                                </svg> 
+                            Tickets 
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link text-light">
+                                <!--Lightbulb Icon-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            Ideas</a>
+                        </li>
+
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link text-light">
+                                <!--People Icon-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                </svg>
+                            Contacts</a>
+                        </li>
+
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link text-light">
+                                <!--Joystick Icon-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
+                                    <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+                                    <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+                                </svg>
+                            Agents</a>
+                        </li>
+
+                        <li class="nav-item mb-4"> 
+                            <a href="#" class="nav-link text-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                            Articles
+                            </a>
+                        </li>
+
+                        <!--Linebreak-->
+                        <hr class="text-light">
+
+                        <li class="nav-item mb-4">
+                            <a href="#" class="nav-link text-light">
+                                <!--Wrench/Options Icon-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2a7.031 7.031 0 0 1-2.949-2.951ZM12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z"/>
+                                </svg>
+                            Settings
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-light">
+                                <!--Tag Icon-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                    <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+                                    <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+                                </svg>
+                            Subscriptions
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
-                
-            <!------   <nav class="flex-column navbar-sm navbar-expand bg-dark">
-                    <div class="d-flex justify-content-center text-light my-5 navbar-brand">
-                    ---------Logo--
-                        <img class="me-2"src="/assets/images/Dashboard_Kit.png" width="32" height="32"/>
-                        <p class="fs-5">Dashboard Kit</p>
-                    </div>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="coll">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse">    
-                        <ul class="navbar-nav d-flex flex-column" id="coll">
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link text-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart-fill" viewBox="0 0 16 16">
-                                        <path d="M15.985 8.5H8.207l-5.5 5.5a8 8 0 0 0 13.277-5.5zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5zM8.5.015V7.5h7.485A8.001 8.001 0 0 0 8.5.015z"/>
-                                    </svg>  
-                                Overview
-                                </a>
-                            </li>
-
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link text-light">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
-                                        <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13Z"/>
-                                    </svg> 
-                                Tickets 
-                                </a>
-                            </li>
-
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link text-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
-                                    </svg>
-                                Ideas</a>
-                            </li>
-
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link text-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-                                    </svg>
-                                Contacts</a>
-                            </li>
-
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link text-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
-                                        <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
-                                        <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
-                                    </svg>
-                                Agents</a>
-                            </li>
-
-                            <li class="nav-item mb-4"> 
-                                <a href="#" class="nav-link text-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-                                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-                                    </svg>
-                                Articles
-                                </a>
-                            </li>
-                            <hr>
-                            <li class="nav-item mb-4">
-                                <a href="#" class="nav-link text-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27.596-.894Z"/>
-                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.49 4.49 0 0 1-1.592-.29L4.747 14.2a7.031 7.031 0 0 1-2.949-2.951ZM12.496 8a4.491 4.491 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11c.027.2.04.403.04.61Z"/>
-                                    </svg>
-                                Settings
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#" class="nav-link text-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
-                                        <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
-                                        <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
-                                    </svg>
-                                Subscriptions
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>-->
             </div>
+
+            <!--Overview Bar Column-->
             <div class="col-md-10 bg-warning">
-                <!--overview bar------------------------------------------------------------------------------------------------------------------------->
+                <!--Overview Bar-->
                 <header class="d-flex justify-content-between flap-wrap flex-md-nowrap align-items-center pt-3 pb-4 mb-3">
                     <h2>Overview</h2>
+                    <!--Right Side Overview Bar-->
                     <ul class="d-flex align-items-center">
+                        <!--Search & Alerts-->
                         <li class="px-sm-2 px-lg-3">
+                            <!--Search Button-->
                             <button type="button" class="btn btn-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                   </svg>
                             </button>
+                            <!--Alert Button-->
                             <button type="button" class="btn btn-sm">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
                                     <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
                                 </svg>
                             </button>
                         </li>
-                        <li class="d-flex align-items-center  border-start">
+                        <!--Username & Profile Picture-->
+                        <li class="d-flex align-items-center border-start">
                             <p class="d-none d-sm-inline-block mb-0 mx-3 me-3">
                                 Baoting Han
                             </p>
                             <img src="assets/images/protrait.png" class="rounded-circle d-none d-sm-inline-block" width="32" height="32" alt="protrait">
                         </li>
                     </ul>
+
+
+                    <!--Did you want to keep this here? Let me know!-->
+
                     <!--search icon and bell icon -
                     <div class="btn-toolbar mb-2 mb-md-0">
                         <div class="btn-group me-2">
@@ -244,31 +280,36 @@
                                 </svg>
                             </button>
                         </div>
-
-                    </div>-->
-                   
+                    </div>--> 
                 </header>
-                <!--4 boxes------------------------------------------------------------------------------->
-                
+
+                <!--Grid for Status Boxes-->
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 text-center mb-3">
+                    <!--Resolved Box Column-->
                     <div class="col">
                         <div class="card four h-100 pb-4 pt-4">
                             <p>Unresolved</p>
                             <h2>60</h2>
                         </div>
                     </div>
+
+                    <!--Overdue Box Column-->
                     <div class="col">
                         <div class="card four h-100 pb-4 pt-4">
                             <p>Overdue</p>
                             <h2>16</h2>
                         </div>
                     </div>
+
+                    <!--Open Box Column-->
                     <div class="col">
                         <div class="card four h-100 pb-4 pt-4">
                             <p>Open</p>
                             <h2>43</h2>
                         </div>
                     </div>
+
+                    <!--On Hold Box Column-->
                     <div class="col">
                         <div class="card four h-100 pb-4 pt-4">
                             <p>On hold</p>
@@ -277,165 +318,92 @@
                     </div>
                 </div>
                     
-                <!--graph area--------------------------------->
+                <!--Graph & Info Container-->
                 <section class="container-fluid px-1 py-1 pb-4">
                     <div class="card row flex-md-row bg-primary mx-auto w-100">
+
+                        <!--Graph Container Column-->
                         <div class="col-md-7 p-5">
+
+                            <!--Title, Date & Legend Container-->
                             <div class="d-flex justify-content-center">
+                                <!--Title & Date-->
                                 <div>
-                                    <h3>today</h3>
-                                    <p>dshdhhjdfhjsdhfjdfhsdfhj</p>
+                                    <h3>Today's Trends</h3>
+                                    <p>as of 25 May 2019, 09:41PM</p>
                                 </div>
+
+                                <!--Legend-->
                                 <ul class="d-flex flex-row mb-3 justify-content-end">
                                     <li>
-                                        <span class="ms-2">today</span>
+                                        <span class="ms-2">Today</span>
                                     </li>
-                                    <li>
-                                        
-                                        <span class="ms-2">today</span>
+                                    <li> 
+                                        <span class="ms-2">Yesterday</span>
                                     </li>
-
                                 </ul>
-
-                            </div>
-                            <!--------------graph showing (should be bigger) ---------------------->
-                            <div class="card-body">
-                                
-                                    <canvas id="lineChart"></canvas>
-                             
-
                             </div>
 
-                            
+                            <!--Graph Note: Fix & Make Bigger-->
+                            <div class="card-body">  
+                                <canvas id="lineChart"></canvas>
+                            </div>
+  
                         </div>
-                        <!------gragh right side---------->
+
+                        <!--Right Side of Graph: Information Column-->
                         <div class="col-md-5 p-0">
+                            <!--Info Column List-->
                             <ul class="list-group list-group-flush text-center h-lg-100 justify-content-evenly">
+                                <!--Resolved Info-->
                                 <li class="list-group-item p-1">
                                     <p>Resolved</p>
                                     <h5>449</h5>
                                 </li>
+
+                                <!--Received Info-->
                                 <li class="list-group-item ">
                                     <p>Received</p>
                                     <h5>426</h5>
                                 </li>
+
+                                <!--Average First Response Info-->
                                 <li class="list-group-item ">
                                     <p>Average First Response Time</p>
                                     <h5>33m</h5>
                                 </li>
+
+                                <!--Average Response Info-->
                                 <li class="list-group-item ">
                                     <p>Average Response Time</p>
                                     <h5>3h 8m</h5>
                                 </li>
+
+                                <!--Resolution Info-->
                                 <li class="list-group-item ">
                                     <p>Resolution within SLA</p>
                                     <h5>94%</h5>
                                 </li>
                             </ul>
-
                         </div>
+
                     </div>
-                </section>
-                
-               <!-----<div class="row  card pb-3">
-                    <div class="col-8">
-                        <article class="card d-flex  bg-light bg-primary">
-                            <div class="row d-flex flex-column">
-                                <h5 class="card-title pt-4 ps-4">Today's Trends</h5>
-                            </div>
-                            <div class="row d-flex flex-row card-subtitle">
-                                <p class="col-sm-7 mt-1 card-subtitle ps-4">as of 25 May 2019, 09:41 PM</p>
-                                <p class="col-sm-2">Today</p>
-                                <p class="ps-4 col-sm-3">Yesterday</p>
-                            </div>
-                            <div class="row">
-                                <canvas id="lineChart"></canvas>
-                            </div>
+                </section> 
 
-                        </article>
-                    </div>
-                    <div class="col-3">
-                        <article class="d-flex  border bg-light bg-primary">
-                            <ul class="list-group list-group-flush text-center">
-                                <li class="list-group-item p-1">
-                                    <p>Resolved</p>
-                                    <h5>449</h5>
-                                </li>
-                                <li class="list-group-item ">
-                                    <p>Received</p>
-                                    <h5>426</h5>
-                                </li>
-                                <li class="list-group-item ">
-                                    <p>Average First Response Time</p>
-                                    <h5>33m</h5>
-                                </li>
-                                <li class="list-group-item ">
-                                    <p>Average Response Time</p>
-                                    <h5>3h 8m</h5>
-                                </li>
-                                <li class="list-group-item ">
-                                    <p>Resolution within SLA</p>
-                                    <h5>94%</h5>
-                                </li>
-                            </ul>
-                        </article>
-                    </div>
-                            
-                    
-                </div>-->
-                <!--- <section class="row mx-sm-1">
-                        <article class="card col-sm-9 mb-3 border bg-light bg-primary">
-                            <div class="row d-flex flex-column">
-                                <h4 class="col-12 card-title pt-4 ps-4">Today's Trends</h2>
-                            </div>
-                            <div class="row d-flex flex-row card-subtitle">
-                                <p class="col-sm-7 mt-1 card-subtitle ps-4">as of 25 May 2019, 09:41 PM</p>
-                                <p class="col-sm-2">Today</p>
-                                <p class="ps-4 col-sm-3">Yesterday</p>
-                            </div>
-                            <div class="row">
-                                <canvas id="lineChart"></canvas>
-                            </div>
-                        </article>
-
-                        <article class="card col-sm-3 mb-3 border bg-light bg-primary">
-                            <ul class="list-group list-group-flush justify-content-evenly text-center">
-                                <li class="list-group-item">
-                                    <p>Resolved</p>
-                                    <h5>449</h5>
-                                </li>
-                                <li class="list-group-item">
-                                    <p>Received</p>
-                                    <h5>426</h5>
-                                </li>
-                                <li class="list-group-item">
-                                    <p>Average First Response Time</p>
-                                    <h5>33m</h5>
-                                </li>
-                                <li class="list-group-item">
-                                    <p>Average Response Time</p>
-                                    <h5>3h 8m</h5>
-                                </li>
-                                <li class="list-group-item">
-                                    <p>Resolution within SLA</p>
-                                    <h5>94%</h5>
-                                </li>
-                            </ul>
-                        </article>
-
-                    </section>-->
-
-               
-
-                <!--unresolved ticket------------------------------------------------------------>
+                <!--Unresolved Ticket & Tasks Container-->
                 <div class="row row-cols-1 row-cols-lg-2 g-4">
+                    <!--Unresolved Ticket Box-->
                     <div class="col pb-lg-2">
+                        <!--Ticket-Card Box-->
                         <div class="card h-100 p-3">
+                            <!--Ticket Grid-->
                             <div class="row">
+                                <!--Title & Subtitle Column-->
                                 <div class="col-8">
                                     <h5>Unresolved tickets</h5>
                                     <p class="text-secondary">Group:Support</p>
                                 </div>
+                                <!--View Details Column-->
                                 <div class="col-4 text-end">
                                     <p class="text-primary lh-md">
                                         <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-decoration-none" href="#">
@@ -444,48 +412,70 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <!--1st Row: Feature Requests-->
                             <div class="row border-bottom border-dark-subtle pt-3">
+                                <!--Title-->
                                 <div class="col-9 lh-base">
                                     <p>Waiting on Feature Request</p>
                                 </div>
+                                <!--Number-->
                                 <div class="col-3 text-end lh-base">
                                     <p class="text-secondary">4238</p>
                                 </div>
                             </div>
+
+                            <!--2nd Row: Customer Response-->
                             <div class="row border-bottom border-dark-subtle pt-3">
+                                <!--Title-->
                                 <div class="col-9 lh-base">
                                     <p>Awaiting Customer Response</p>
                                 </div>
+                                <!--Number-->
                                 <div class="col-3 text-end lh-base">
                                     <p class="text-secondary">1005</p>
                                 </div>
                             </div>
+
+                            <!--3rd Row: Developer Fix-->
                             <div class="row border-bottom border-dark-subtle pt-3">
+                                <!--Title-->
                                 <div class="col-9 lh-base">
-                                    <p>Awaitiong Developer Fix</p>
+                                    <p>Awaiting Developer Fix</p>
                                 </div>
+                                <!--Number-->
                                 <div class="col-3 text-end lh-base">
                                     <p class="text-secondary">914</p>
                                 </div>
                             </div>
+
+                            <!--4th Row: Pending-->
                             <div class="row border-bottom border-dark-subtle pt-3">
+                                <!--Title-->
                                 <div class="col-9 lh-base">
-                                    <p>pending</p>
+                                    <p>Pending</p>
                                 </div>
+                                <!--Number-->
                                 <div class="col-3 text-end lh-base">
                                     <p class="text-secondary">281</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!---------------------------task---------------------------------->
+
+                    <!--Tasks-->
                     <div class="col pb-3">
+                        <!--Tasks Card Box-->
                         <div class="card h-100 p-3">
+                            <!--Tasks Grid-->
                             <div class="row">
+                                <!--Title & Subtitle-->
                                 <div class="col-9">
                                     <h5>Tasks</h5>
                                     <p class="text-secondary">Today</p>
                                 </div>
+
+                                <!--View All Column-->
                                 <div class="col-3 text-end">
                                     <p class="text-primary lh-md">
                                         <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-decoration-none" href="#">
@@ -494,34 +484,45 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <!--1st Row: New Task-->
                             <div class="row border-bottom border-dark-subtle pt-3">
                                 <div class="col-9 lh-base">
-                                    <p class="text-secondary">create new task</p>
+                                    <p class="text-secondary">Create new task</p>
                                 </div>
                                 <div class="col-3 text-end">
                                     <button type="button" class="btn btn-sm btn-light">+</button>
                                 </div>
                             </div>
+
+                            <!--2nd Row: Customer Response-->
                             <div class="row border-bottom border-dark-subtle pt-3">
                                 <div class="col-9 lh-base">
                                     <p>Awaiting Customer Response</p>
                                 </div>
+                                <!--Urgent Button-->
                                 <div class="col-3 text-end lh-base">
                                     <button type="button" class="btn btn-warning btn-sm text-white">URGENT</button>
                                 </div>
                             </div>
+
+                            <!--3rd Row: Developer Fix -->
                             <div class="row border-bottom border-dark-subtle pt-3">
                                 <div class="col-9 lh-base">
-                                    <p>Awaitiong Developer Fix</p>
+                                    <p>Awaiting Developer Fix</p>
                                 </div>
+                                <!--New Button-->
                                 <div class="col-3 text-end lh-base">
                                     <button type="button" class="btn btn-success btn-sm text-white">NEW</button>
                                 </div>
                             </div>
+
+                            <!--4th Row: Pending-->
                             <div class="row border-bottom border-dark-subtle pt-3">
                                 <div class="col-9 lh-base">
-                                    <p>pending</p>
+                                    <p>Pending</p>
                                 </div>
+                                <!--Default Button-->
                                 <div class="col-3 text-end lh-base">
                                     <button type="button" class="btn btn-sm btn-light">DEFAULT</button>
                                 </div>
@@ -529,17 +530,17 @@
                         </div>
                     </div>
                 </div>
-
-               
-            </div>
-               
+            </div>     
          </div>
+
+         <!--Footer-->
          <footer>
 
          </footer>
+         <!--Javascript Script-->
          <script src="/assets/js/myscripts.js"></script>
+         <!--Bootstrap Script-->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
         </div>
     </div>
 
