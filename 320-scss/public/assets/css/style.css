@@ -11,6 +11,12 @@
   display: none;
 }
 
+.chart-container {
+  position: absolute;
+  width: 686px;
+  height: 336px;
+}
+
 @media (max-width: 768px) {
   .col-sm-2 {
     display: none;

@@ -12,6 +12,13 @@
     display: none;
 }
 
+
+.chart-container {
+    position: absolute;
+    width: 686px;
+    height: 336px;
+
+}
 //Mobile Version
 @media (max-width: 768px) { 
 .col-sm-2 {

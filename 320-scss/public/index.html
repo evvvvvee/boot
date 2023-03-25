@@ -137,9 +137,9 @@
             <!--Container for Desktop Navigation Bar-->
             <div class="col-sm-2  bg-dark">
                 <!--Desktop Navigation & Items-->
-                <nav class="flex-column navbar navbar-expand">
+                <nav class="flex-column flex-md-column navbar navbar-expand">
                     <!--Logo-->
-                    <a href="" class="d-flex align-items-center my-5 me-md-auto text-decoration-none">
+                    <a href="" class="d-flex align-items-center my-5 text-decoration-none">
                         <img class="me-2"src="/assets/images/Dashboard_Kit.png" width="32" height="32"/>
                         <span class="fs-5">Dashboard Kit</span>
                     </a>
@@ -326,7 +326,7 @@
                         <div class="col-md-7 p-5">
 
                             <!--Title, Date & Legend Container-->
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-between">
                                 <!--Title & Date-->
                                 <div>
                                     <h3>Today's Trends</h3>
@@ -345,7 +345,7 @@
                             </div>
 
                             <!--Graph Note: Fix & Make Bigger-->
-                            <div class="card-body">  
+                            <div class="d-flex justify-center card-body chart-container">  
                                 <canvas id="lineChart"></canvas>
                             </div>
   
@@ -354,33 +354,33 @@
                         <!--Right Side of Graph: Information Column-->
                         <div class="col-md-5 p-0">
                             <!--Info Column List-->
-                            <ul class="list-group list-group-flush text-center h-lg-100 justify-content-evenly">
+                            <ul class="list-group list-group-flush text-center h-lg-100">
                                 <!--Resolved Info-->
-                                <li class="list-group-item p-1">
+                                <li class="list-group-item p-4">
                                     <p>Resolved</p>
                                     <h5>449</h5>
                                 </li>
 
                                 <!--Received Info-->
-                                <li class="list-group-item ">
+                                <li class="list-group-item p-4">
                                     <p>Received</p>
                                     <h5>426</h5>
                                 </li>
 
                                 <!--Average First Response Info-->
-                                <li class="list-group-item ">
+                                <li class="list-group-item p-4">
                                     <p>Average First Response Time</p>
                                     <h5>33m</h5>
                                 </li>
 
                                 <!--Average Response Info-->
-                                <li class="list-group-item ">
+                                <li class="list-group-item p-4">
                                     <p>Average Response Time</p>
                                     <h5>3h 8m</h5>
                                 </li>
 
                                 <!--Resolution Info-->
-                                <li class="list-group-item ">
+                                <li class="list-group-item p-4">
                                     <p>Resolution within SLA</p>
                                     <h5>94%</h5>
                                 </li>
