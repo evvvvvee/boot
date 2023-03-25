@@ -1,0 +1,23 @@
+.four:hover {
+  color: blue;
+  border-color: brown;
+}
+
+.hiddenbar:hover {
+  background-color: aqua;
+}
+
+#sidebarmobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .col-sm-2 {
+    display: none;
+  }
+  #sidebarmobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
