@@ -1,6 +1,6 @@
 .four:hover {
-  color: blue;
-  border-color: brown;
+  color: rgb(108, 33, 246);
+  border-color: rgb(83, 29, 162);
 }
 
 .hiddenbar:hover {
@@ -13,11 +13,10 @@
 
 .chart-container {
   position: relative;
-  width: 686px;
-  height: 336px;
+  width: 87%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .col-sm-2 {
     display: none;
   }
@@ -26,9 +25,12 @@
   }
   .chart-container {
     position: relative;
-    width: 325px;
-    height: 200px;
-    margin-right: 2px;
+    width: 200%;
+    height: 200%;
+    padding-bottom: 0%;
+  }
+  #linechart {
+    height: 100px;
   }
   .mobile-legend-container {
     height: 500px;
