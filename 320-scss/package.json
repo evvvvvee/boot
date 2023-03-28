@@ -2,8 +2,8 @@
   "name": "bootstraps",
   "version": "1.0.0",
   "scripts": {
-    "goservergo":"lite-server --baseDir=\"public\"",
-    "cssprecompiler":"sass --watch src/scss:public/assets/css",
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "cssprecompiler": "sass --watch src/scss:public/assets/css",
     "start": "concurrently \"npm run goservergo\" \"npm run cssprecompiler\""
   },
   "author": "Baoting han & Thalia",
@@ -16,5 +16,9 @@
   "main": "index.js",
   "keywords": [],
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1",
+    "bootstrap-icons": "^1.10.3"
+  }
 }

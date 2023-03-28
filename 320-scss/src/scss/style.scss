@@ -1,0 +1,53 @@
+//Desktop Version
+.four:hover {
+    color: rgb(108, 33, 246);
+    border-color:rgb(83, 29, 162);
+
+}
+.hiddenbar:hover {
+    background-color: aqua;
+}
+
+#sidebarmobile {
+    display: none;
+}
+
+
+.chart-container {
+    position: relative;
+    width: 87%;
+}
+
+
+
+//Mobile Version
+@media (max-width: 769px) { 
+.col-sm-2 {
+    display: none;
+}
+
+#sidebarmobile {
+    display: block;
+}
+
+.chart-container {
+    position: relative;
+    width: 200%;
+    height: 200%;
+    padding-bottom: 0%;
+}
+
+//Issues fixing width of chart here
+#linechart {
+    height: 100px;
+}
+
+.mobile-legend-container {
+    height: 500px;
+    width: 200px;
+}
+
+.mobile_title {
+    font-size: 3vh;
+}
+ }

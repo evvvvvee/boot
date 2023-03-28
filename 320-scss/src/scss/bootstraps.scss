@@ -1,0 +1,14 @@
+//Google Fonts Below
+//Multifont
+@import url("https://use.typekit.net/ejr0hrj.css");
+
+//If any default variables need to be overridden, it needs to be added below.
+$font-family-base: "muli", sans-serif;
+$light: #F7F8FC;
+
+
+
+//Variables need to be added above! BEFORE @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// Add additional custom code here below
+
